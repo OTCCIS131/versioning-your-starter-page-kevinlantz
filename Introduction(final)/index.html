@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Introduction</title>
+    <script>
+        function changeimage() {
+
+            document.getElementById("e").src = document.getElementById("forest").src;
+            document.getElementById("w").src = document.getElementById("forest").src;
+        }
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: lightgreen;
+            border: 10px solid #73AD21;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        div.row {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+        
+        div.discription {
+            float: left;
+            padding: 15px;
+        }
+        
+        div.row:hover {
+            border: 1px solid #777;
+        }
+        
+        div.row img {
+            width: 100%;
+            height: 250px;
+        }
+        
+        div.image {
+            padding-left: 17%;
+        }
+        
+        h3.er {
+            text-align: center;
+        }
+        
+        #w {
+            position: absolute;
+            float: left;
+        }
+        
+        #e {
+            position: relative;
+            float: right;
+        }
+        
+        div.f {
+            position: relative;
+            left: 10%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Profile</h1>
+
+        <img id="w" src="Images\computers.jpg" alt="w" width="250" height="250">
+        <img id="e" src="Images\computers.jpg" alt="e" width="250" height="250">
+        <div class="f">
+            <h2>Name: Kevin Lantz</h2>
+            <h2>Major: Computer Information Science</h2>
+
+            <div class "run">
+                <h3 class="er"><strong> About me:<br>
+                </strong> I am finishing up school and working part time.
+                    <br> Enjoy working on computer and writing code.
+                    <br> Like watching sports and playing video games.
+                    <br>&nbsp&nbsp I am interested in learning new tatics to web development.
+                </h3>
+
+            </div>
+        </div>
+
+        <p><strong>
+            Hobbies
+            </strong>
+        </p>
+
+        <div class="image">
+
+            <div class="row">
+
+                <img id="forest" src="Images\forest.jpg" alt="forest" width="250" height="250">
+                <div class="discription"> Go on hikes and be outside</div>
+            </div>
+
+            <div class="row">
+                <img id="bike" src="Images\bike.jpg" alt="bike" width="250" height="250">
+                <div class="discription"> Riding bikes<br></div>
+            </div>
+            <div class="row">
+                <img id="computer" src="Images\computers.jpg" alt="computer" width="250" height="250">
+                <div class="discription"> Working on computers<br> </div>
+            </div>
+
+            <div class="row">
+                <img id="weights" src="Images\weights.jpg" alt="weight" width="250" height="250">
+                <div class="discription"> Exercising lifting weights<br> </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="button" align="center">
+
+        <input id="but" type="button" value="Swap" onclick="changeimage();" />
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
